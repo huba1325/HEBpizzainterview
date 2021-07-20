@@ -90,7 +90,7 @@ class NameForm extends React.Component {
           <br />
           </div>
 
-          <button type="submit" className="submitBtn" onClick={this.openModal}>Submit</button>
+          <button type="submit" class="button" onClick={this.openModal}>Submit</button>
 
         <Modal
       show={this.state.isOpen} 

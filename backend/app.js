@@ -45,17 +45,17 @@ app.get('/orders', (req, res) => {
     );
   })
 
-  //send an order
-  // app.post('/ordersend', (req, res) => {
-  //   request(
-  //       "https://order-pizza-api.herokuapp.com/api/orders",
-  //       function (error, response, body) {
-  //       if (!error && response.statusCode == 200) {
-  //           res.send(body);
-  //       }
-  //   }
-  //   );
-  // })
+  // send an order
+  app.post('/ordersend', (req, res) => {
+    request(
+        "https://order-pizza-api.herokuapp.com/api/orders",
+        function (error, response, body) {
+        if (!error && response.statusCode == 200) {
+            res.send(body);
+        }
+    }
+    );
+  })
 
   //delete an order
   // app.delete('/orderdelete', (req, res) => {

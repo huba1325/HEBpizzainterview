@@ -1,21 +1,20 @@
-import local_pizza from './images/local_pizza.svg';
 import './App.css';
-import { Banner } from 'material-ui-banner';
-import { Avatar } from '@material-ui/core';
 import { NameForm } from './components/Form';
-import { Orders } from './components/GetOrders2';
+import { Orders } from './components/GetOrders';
+import RestaurantIcon from '@material-ui/icons/Restaurant';
 
 function App() {
   return (
-    <div className="App"> 
-    <Banner
-    icon={<Avatar alt="pizza icon" src={local_pizza} />}
-    label ="HEB's Pizza App"
-    showDismissButton = {false}
-    open
-  />
+  <div className="App"> 
+  <header>
+	  <div class="overlay">
+      <h1>HEB's Pizza</h1>
+      <RestaurantIcon />
+		</div>
+  </header>
   <br />
   <h2> Lets order a pizza! </h2>
+  <br />
   <Orders />
   <NameForm />
   </div>
