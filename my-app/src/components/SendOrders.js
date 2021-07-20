@@ -8,7 +8,12 @@ const apiURL = 'https://order-pizza-api.herokuapp.com/api/'
 const authAxios = axios.create({
   apiURL,
   headers: {
-    Authorization: `Bearer ${accesstoken}`
+    Authorization: `Bearer ${accesstoken}`,
+    'Content-Type': 'application/json'
+  },
+  proxy: {
+    host: 'localhost',
+    port: '5000'
   }
 })
 
@@ -19,7 +24,7 @@ const json = {
     "Table_No": 0
   };
 
-export default class AddOrders extends Component {
+export default class SendOrders extends Component {
     constructor() {
         super();
         this.state = {
@@ -43,4 +48,4 @@ export default class AddOrders extends Component {
 
 }
 
-export { AddOrders }
+export { SendOrders }

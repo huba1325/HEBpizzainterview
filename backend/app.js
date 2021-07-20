@@ -5,17 +5,17 @@ const port = 5000
 
 
 //token
-//a2de15df832cfb5ef25b1ea13a837c0bb451d9d1da3229eb485d0add38c04e0f
+// //a2de15df832cfb5ef25b1ea13a837c0bb451d9d1da3229eb485d0add38c04e0f
 
-const accesstoken = 'a2de15df832cfb5ef25b1ea13a837c0bb451d9d1da3229eb485d0add38c04e0f'
-const apiURL = 'https://order-pizza-api.herokuapp.com/api/'
+// const accesstoken = 'a2de15df832cfb5ef25b1ea13a837c0bb451d9d1da3229eb485d0add38c04e0f'
+// const apiURL = 'https://order-pizza-api.herokuapp.com/api/'
 
-// const authAxios = axios.create({
-//   apiURL,
-//   headers: {
-//     Authorization: `Bearer ${accesstoken}`
-//   }
-// })
+// // const authAxios = axios.create({
+// //   apiURL,
+// //   headers: {
+// //     Authorization: `Bearer ${accesstoken}`
+// //   }
+// // })
 
 //test
 app.get('/', (req, res) => {
