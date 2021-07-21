@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import axios from 'axios';
 
 
-const accesstoken = 'a2de15df832cfb5ef25b1ea13a837c0bb451d9d1da3229eb485d0add38c04e0f'
+const accesstoken = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MjY4MjkwNzAsIm5iZiI6MTYyNjgyOTA3MCwianRpIjoiMGFjNDcxOTctNWM0Ni00NTdiLTljYWQtNzFlMmI5Yjk3ZjBkIiwiZXhwIjoxNjI2ODI5OTcwLCJpZGVudGl0eSI6InRlc3QiLCJmcmVzaCI6ZmFsc2UsInR5cGUiOiJhY2Nlc3MifQ.La3tr9VNQlY_w7W_sliXCBE3qFMAjacbcnh80x72wdI'
 const apiURL = 'https://order-pizza-api.herokuapp.com/api/'
 
 const authAxios = axios.create({

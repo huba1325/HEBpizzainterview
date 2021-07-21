@@ -10,28 +10,26 @@ export default class Auth extends Component {
         };
     }
 
-        componentDidMount() {
+    componentDidMount() {
 
-        var reqData = {
-                passowrd: "test",
-                username: "test"
-            };
-         axios({
-    method: 'post',
-    url: 'https://cors-anywhere.herokuapp.com/https://order-pizza-api.herokuapp.com/api/auth',
-        data: (reqData),   
+        const user = axios.post('https://order-pizza-api.herokuapp.com/api/auth', 
+        { 
+            // headers: {
+            //     'Content-Type': 'application/json',
+            //     'Access-Control-Allow-Origin': '*'
 
-    headers: { 
-      "Content-Type": "application/json",
+            // },
+            auth: {
+            password: 'test',    
+            username: 'test'
+          }
+        }).then((response) =>{
+                        console.log(response)
+                        //this.setstate would go here to store the token
+                    }).catch((error) =>{
+                        console.log(error);
+                    })
     }
-  }).then((response) =>{
-            console.log(response)
-            //this.setstate would go here to store the token
-        }).catch((error) =>{
-            console.log(error);
-        })
-    }
-
     render() {
         return (
             <div>
