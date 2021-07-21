@@ -6,7 +6,7 @@ export default class Auth extends Component {
     constructor() {
         super();
         this.state = {
-            order: "no order yet"
+            token: ""
         };
     }
 
@@ -26,7 +26,7 @@ export default class Auth extends Component {
     }
   }).then((response) =>{
             console.log(response)
-            //this.setstate would go here
+            //this.setstate would go here to store the token
         }).catch((error) =>{
             console.log(error);
         })

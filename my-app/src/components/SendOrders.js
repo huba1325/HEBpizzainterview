@@ -11,6 +11,7 @@ const authAxios = axios.create({
     Authorization: `Bearer ${accesstoken}`,
     'Content-Type': 'application/json'
   },
+  //axios call always went to port 3000 still?
   proxy: {
     host: 'localhost',
     port: '5000'

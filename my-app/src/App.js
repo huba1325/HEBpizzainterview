@@ -1,5 +1,5 @@
 import './App.css';
-import { NameForm } from './components/Form';
+import { PizzaForm } from './components/Form';
 import { Orders } from './components/GetOrders';
 // import { SendOrders } from './components/SendOrders';
 import RestaurantIcon from '@material-ui/icons/Restaurant';
@@ -18,7 +18,7 @@ function App() {
   <h2> Lets order a pizza! </h2>
   <br />
   <Orders />
-  <NameForm />
+  <PizzaForm />
   </div>
   );
 }

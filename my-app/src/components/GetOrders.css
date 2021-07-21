@@ -35,4 +35,5 @@ p.tableno {
     margin: 4px 2px;
     margin-bottom: 10px;
     cursor: pointer;
+    opacity: 0.9
   }

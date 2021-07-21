@@ -2,7 +2,7 @@ import React from 'react';
 import './Form.css'
 import { Modal } from 'react-bootstrap';
 
-class NameForm extends React.Component {
+class PizzaForm extends React.Component {
 
   constructor(props) {
     super(props);
@@ -51,7 +51,6 @@ class NameForm extends React.Component {
               name="crust"
               defaultValue={this.state.crust}
               onChange={this.handleChange}
-              ref={node => (this.inputNode = node)}
             />
           </label>
           <br />
@@ -62,7 +61,6 @@ class NameForm extends React.Component {
               name="flavor"
               defaultValue={this.state.flavor}
               onChange={this.handleChange}
-              ref={node => (this.inputNode = node)}
             />
           </label>
           <br />
@@ -73,7 +71,6 @@ class NameForm extends React.Component {
               name="size"
               defaultValue={this.state.size}
               onChange={this.handleChange}
-              ref={node => (this.inputNode = node)}
             />
           </label>
           <br />
@@ -84,7 +81,6 @@ class NameForm extends React.Component {
               name="tableNum"
               defaultValue={this.state.tableNum}
               onChange={this.handleChange}
-              ref={node => (this.inputNode = node)}
             />
           </label>
           <br />
@@ -96,11 +92,11 @@ class NameForm extends React.Component {
       show={this.state.isOpen} 
       onHide={this.closeModal}
       size="lg"
-      aria-labelledby="contained-modal-title-vcenter"
+      aria-labelledby="modal-close"
       centered
     >
       <Modal.Header closeButton>
-        <Modal.Title id="contained-modal-title-vcenter">
+        <Modal.Title id="modal-title">
           <h1>Thank you for ordering with us, here is your order conformation!</h1>
         </Modal.Title>
       </Modal.Header>
@@ -123,4 +119,4 @@ class NameForm extends React.Component {
       )
     }
   }
-  export {NameForm}
+  export {PizzaForm}
