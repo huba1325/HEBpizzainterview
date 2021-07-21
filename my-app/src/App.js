@@ -14,8 +14,8 @@ function App() {
       <RestaurantIcon />
 		</div>
   </header>
-  {/* <Auth /> */}
-  {/* <SendOrders /> */}
+  {/* <Auth />
+  <SendOrders /> */}
   <br />
   <h2> Lets order a pizza! </h2>
   <br />

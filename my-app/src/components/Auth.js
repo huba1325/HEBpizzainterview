@@ -1,6 +1,12 @@
 import React, { Component } from 'react'
 import axios from 'axios';
 
+
+const body = {
+    "password": "test",
+    "username": "test"
+  };
+
 export default class Auth extends Component {
 
     constructor() {
@@ -12,13 +18,12 @@ export default class Auth extends Component {
 
     componentDidMount() {
 
-        const user = axios.post('https://order-pizza-api.herokuapp.com/api/auth', 
+        axios.post('https://order-pizza-api.herokuapp.com/api/auth', 
+        body,
         { 
-            // headers: {
-            //     'Content-Type': 'application/json',
-            //     'Access-Control-Allow-Origin': '*'
-
-            // },
+            headers: {
+                'Content-Type': 'application/json',
+            },
             auth: {
             password: 'test',    
             username: 'test'
